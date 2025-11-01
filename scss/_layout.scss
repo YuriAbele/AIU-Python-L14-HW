@@ -16,7 +16,7 @@ section {
         line-height: 1.6;
     }
 
-    .job {
+    .job, .skills .hobbies {
         margin-bottom: $padding;
 
         h3 {
@@ -28,5 +28,15 @@ section {
             list-style: disc;
             margin-left: 20px;
         }
+
+        li::marker {
+            content: '→ '; /* Ставим стрелочку */
+            color: $primary-color;
+        }
     }
+}
+
+.hobby-icon {
+    width: 48px;
+    margin-right: 20px;
 }

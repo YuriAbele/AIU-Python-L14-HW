@@ -1,3 +1,4 @@
+@charset "UTF-8";
 section {
   padding: 20px 0;
   background-color: #fff;
@@ -14,16 +15,27 @@ section p {
   line-height: 1.6;
 }
 
-section .job {
+section .job, section .skills .hobbies {
   margin-bottom: 20px;
 }
 
-section .job h3 {
+section .job h3, section .skills .hobbies h3 {
   font-size: 1.5rem;
-  color: #2ecc71;
+  color: #0056b3;
 }
 
-section .job ul {
+section .job ul, section .skills .hobbies ul {
   list-style: disc;
   margin-left: 20px;
+}
+
+section .job li::marker, section .skills .hobbies li::marker {
+  content: '→ ';
+  /* Ставим стрелочку */
+  color: #0f7cc4;
+}
+
+.hobby-icon {
+  width: 48px;
+  margin-right: 20px;
 }
