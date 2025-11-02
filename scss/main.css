@@ -68,21 +68,21 @@ section p {
   line-height: 1.6;
 }
 
-section .job, section .skills .hobbies {
+section .job, section .skills, section .hobbies {
   margin-bottom: 20px;
 }
 
-section .job h3, section .skills .hobbies h3 {
+section .job h3, section .skills h3, section .hobbies h3 {
   font-size: 1.5rem;
   color: #0056b3;
 }
 
-section .job ul, section .skills .hobbies ul {
+section .job ul, section .skills ul, section .hobbies ul {
   list-style: disc;
   margin-left: 20px;
 }
 
-section .job li::marker, section .skills .hobbies li::marker {
+section .job li::marker, section .skills li::marker, section .hobbies li::marker {
   content: '→ ';
   /* Ставим стрелочку */
   color: #0f7cc4;
@@ -90,8 +90,6 @@ section .job li::marker, section .skills .hobbies li::marker {
 
 .hobby-icon {
   width: 48px;
-  -height: 48px;
-  -vertical-align: middle;
   margin-right: 20px;
 }
 
